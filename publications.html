@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications — Sourav Majumder</title>
+    <meta
+      name="description"
+      content="Peer-reviewed publications by Sourav Majumder on blockchain systems, Hyperledger Fabric, IoT identity, and academic document verification."
+    />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          var prefers = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          if (t === "dark" || (!t && prefers))
+            document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/output.css" />
+  </head>
+  <body>
+    <header class="border-b border-line dark:border-line-dark">
+      <div class="container-page py-5 flex items-center justify-between">
+        <a href="/" class="font-serif text-base font-medium tracking-tight"
+          >Sourav Majumder</a
+        >
+        <nav class="flex items-center gap-6">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/research.html" class="nav-link">Research</a>
+          <a href="/publications.html" class="nav-link" aria-current="page"
+            >Publications</a
+          >
+          <a href="/cv.html" class="nav-link">CV</a>
+          <a href="/blog/" class="nav-link">Notes</a>
+          <a href="/contact.html" class="nav-link">Contact</a>
+          <button
+            id="theme-toggle"
+            class="text-muted dark:text-muted-dark hover:text-ink dark:hover:text-ink-dark transition-colors ml-2"
+            aria-label="Toggle theme"
+          ></button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container-page pt-16 pb-12 sm:pt-20">
+        <p class="section-eyebrow mb-4">Publications</p>
+        <h1
+          class="font-serif text-4xl sm:text-6xl font-medium leading-[1] tracking-tightest max-w-[20ch]"
+        >
+          Peer-reviewed work.
+        </h1>
+        <p
+          class="font-serif text-lg text-muted dark:text-muted-dark mt-6 max-w-[60ch]"
+        >
+          Click <span class="font-mono text-xs">BibTeX</span> to copy a
+          citation, or
+          <a
+            href="https://scholar.google.com/citations?user=VihKVooAAAAJ"
+            target="_blank"
+            rel="noopener"
+            class="prose-link"
+            >browse my Google Scholar</a
+          >.
+        </p>
+      </section>
+
+      <section class="container-page pb-20">
+        <div id="pubs-list" class="max-w-prose mx-auto sm:mx-0"></div>
+      </section>
+    </main>
+
+    <footer class="border-t border-line dark:border-line-dark">
+      <div
+        class="container-page py-8 text-xs font-sans text-muted dark:text-muted-dark flex flex-col sm:flex-row justify-between gap-2"
+      >
+        <div>© 2026 Sourav Majumder</div>
+        <div class="flex gap-4">
+          <a
+            href="/blog/rss.xml"
+            class="hover:text-accent dark:hover:text-accent-dark transition-colors"
+            >RSS</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/theme.js"></script>
+    <script src="/js/citations.js"></script>
+    <script src="/js/publications.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Enhancing Hyperledger Fabric: A Scalable Framework for Optimized Blockchain Performance",
+    "authors": [
+      "Ankan Saha",
+      "Sourav Majumder",
+      "Md. Motaleb Hossen Manik",
+      "M. M. A. Hashem"
+    ],
+    "venue": "27th International Conference on Computer and Information Technology (ICCIT)",
+    "venue_short": "ICCIT 2024",
+    "year": 2024,
+    "location": "Cox's Bazar, Bangladesh",
+    "doi": "10.1109/ICCIT64611.2024.11022136",
+    "doi_url": "https://doi.org/10.1109/ICCIT64611.2024.11022136",
+    "pdf_url": "https://ieeexplore.ieee.org/document/11022136",
+    "abstract": "Optimizes Hyperledger Fabric performance through tuning of system parameters including block size, endorsement policies, and consensus mechanisms. Establishes a network architecture with two organizations, three Raft orderers, and a distributed consensus mechanism, achieving significant gains in throughput, scalability, and responsiveness over default Hyperledger Fabric configurations.",
+    "bibtex": "@INPROCEEDINGS{11022136,\n  author={Saha, Ankan and Majumder, Sourav and Hossen Manik, Md. Motaleb and Hashem, M. M. A.},\n  booktitle={2024 27th International Conference on Computer and Information Technology (ICCIT)},\n  title={Enhancing Hyperledger Fabric: A Scalable Framework for Optimized Blockchain Performance},\n  year={2024},\n  volume={},\n  number={},\n  pages={1345-1350},\n  keywords={Technological innovation;Supply chain management;Distributed ledger;Scalability;Hafnium;Computer architecture;Throughput;Solids;Fabrics;Consensus protocol;Hyperledger Fabric;Private Blockchain;Scalability;Transaction Throughput;Latency;Consensus Mechanism},\n  doi={10.1109/ICCIT64611.2024.11022136}\n}",
+    "tags": ["hyperledger", "blockchain", "performance"]
+  },
+  {
+    "title": "A Blockchain-Based Scalable Framework for Academic Document Verification",
+    "authors": [
+      "Sourav Majumder",
+      "Resam Zaha",
+      "Md. Motaleb Hossen Manik",
+      "Kazi Md. Rokibul Alam"
+    ],
+    "venue": "26th International Conference on Computer and Information Technology (ICCIT)",
+    "venue_short": "ICCIT 2023",
+    "year": 2023,
+    "location": "Cox's Bazar, Bangladesh",
+    "doi": "10.1109/ICCIT60459.2023.10441245",
+    "doi_url": "https://doi.org/10.1109/ICCIT60459.2023.10441245",
+    "pdf_url": "https://ieeexplore.ieee.org/document/10441245",
+    "abstract": "A blockchain-based framework for verifying academic documents, using Ethereum smart contracts and cryptographic hashing to prevent modification, confirm authenticity, and ensure proper storage. Addresses widespread document forgery in academic contexts and demonstrates precise verification compared to existing centralized solutions.",
+    "bibtex": "@INPROCEEDINGS{10441245,\n  author={Majumder, Sourav and Zaha, Resam and Hossen Manik, Md. Motaleb and Alam, Kazi Md. Rokibul},\n  booktitle={2023 26th International Conference on Computer and Information Technology (ICCIT)},\n  title={A Blockchain Based Scalable Framework for Academic Document Verification},\n  year={2023},\n  volume={},\n  number={},\n  pages={1-6},\n  keywords={Computer architecture;Fingerprint recognition;Forgery;Blockchains;Reliability;Information technology;Faces;Document verification;Blockchain;IPFS storage;Cryptographic hashing;Ethereum},\n  doi={10.1109/ICCIT60459.2023.10441245}\n}",
+    "tags": ["blockchain", "ethereum", "verification"]
+  }
+]

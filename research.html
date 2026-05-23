@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research — Sourav Majumder</title>
+    <meta
+      name="description"
+      content="Research interests and current projects of Sourav Majumder: Ethereum P2P transaction propagation, blockchain systems security, mempool security."
+    />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          var prefers = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          if (t === "dark" || (!t && prefers))
+            document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/output.css" />
+  </head>
+  <body>
+    <header class="border-b border-line dark:border-line-dark">
+      <div class="container-page py-5 flex items-center justify-between">
+        <a href="/" class="font-serif text-base font-medium tracking-tight"
+          >Sourav Majumder</a
+        >
+        <nav class="flex items-center gap-6">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/research.html" class="nav-link" aria-current="page"
+            >Research</a
+          >
+          <a href="/publications.html" class="nav-link">Publications</a>
+          <a href="/cv.html" class="nav-link">CV</a>
+          <a href="/blog/" class="nav-link">Notes</a>
+          <a href="/contact.html" class="nav-link">Contact</a>
+          <button
+            id="theme-toggle"
+            class="text-muted dark:text-muted-dark hover:text-ink dark:hover:text-ink-dark transition-colors ml-2"
+            aria-label="Toggle theme"
+          ></button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page hero -->
+      <section class="container-page pt-16 pb-12 sm:pt-20">
+        <p class="section-eyebrow mb-4">Research</p>
+        <h1
+          class="font-serif text-4xl sm:text-6xl font-medium leading-[1] tracking-tightest max-w-[18ch]"
+        >
+          The transactions travel, and where they leak.
+        </h1>
+      </section>
+
+      <!-- Current projects -->
+      <section
+        class="container-page py-12 border-t border-line dark:border-line-dark"
+      >
+        <div class="grid sm:grid-cols-[180px_1fr] gap-6 sm:gap-12">
+          <div><p class="section-eyebrow">Current</p></div>
+          <div class="max-w-prose space-y-12">
+            <article>
+              <h2 class="font-serif text-2xl font-medium mb-2 tracking-tight">
+                Optimizing Ethereum's transaction propagation
+              </h2>
+              <p
+                class="font-sans text-xs text-muted dark:text-muted-dark uppercase tracking-wider mb-4"
+              >
+                With Dr. Yibo Wang · Collaborating with Dr. Kai Li (SIT)
+              </p>
+              <p class="font-serif text-[1.0625rem] leading-relaxed mb-3">
+                The project has two phases. <strong>Phase 1</strong> deploys an
+                instrumented Geth client on mainnet to collect ground truth
+                traces of who sends what to whom and which messages are wasted.
+                <strong>Phase 2</strong> replays those traces in a controlled
+                testnet to evaluate propagation strategies sender side and
+                receiver side filters using price advice (S1, S2, S3) and a
+                real-time variant that corrects for stale state.
+              </p>
+              <p
+                class="font-serif text-[1.0625rem] leading-relaxed text-muted dark:text-muted-dark"
+              >
+                I am currently building the Phase 2 harness: a 3-region private
+                PoS testnet on AWS EC2.
+              </p>
+            </article>
+
+            <article>
+              <h2 class="font-serif text-2xl font-medium mb-2 tracking-tight">
+                Mempool-layer security across clients
+              </h2>
+              <p
+                class="font-sans text-xs text-muted dark:text-muted-dark uppercase tracking-wider mb-4"
+              >
+                Exploratory · multiple Ethereum execution clients
+              </p>
+              <p class="font-serif text-[1.0625rem] leading-relaxed mb-3">
+                Geth's transaction fetcher is one path. Reth, Besu, and
+                Nethermind each implement their own with their own underpriced
+                caches, fetch timeouts, batch rejection logic. Different
+                implementations, different bugs.
+              </p>
+              <p class="font-serif text-[1.0625rem] leading-relaxed">
+                I'm reading these codebases to surface attack vectors specific
+                to each: cache pollution patterns, fetch timeout exploits, ways
+                an adversary can force a node to waste cycles or drop legitimate
+                transactions.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Past work -->
+      <section
+        class="container-page py-12 border-t border-line dark:border-line-dark"
+      >
+        <div class="grid sm:grid-cols-[180px_1fr] gap-6 sm:gap-12">
+          <div><p class="section-eyebrow">Past</p></div>
+          <div class="max-w-prose space-y-10">
+            <article>
+              <h2 class="font-serif text-xl font-medium mb-2 tracking-tight">
+                Hyperledger Fabric performance optimization
+              </h2>
+              <p
+                class="font-sans text-xs text-muted dark:text-muted-dark uppercase tracking-wider mb-3"
+              >
+                KUET undergraduate thesis · Dr. M. M. A. Hashem · published
+                ICCIT 2024
+              </p>
+              <p class="font-serif text-[1.0625rem] leading-relaxed">
+                Systematic sweep of block size, channel count, endorsement
+                policy, and Raft orderer configurations to find the
+                configurations where Hyperledger Fabric breaks down and the
+                counterintuitive ones where it scales better than the defaults.
+              </p>
+            </article>
+
+            <article>
+              <h2 class="font-serif text-xl font-medium mb-2 tracking-tight">
+                Blockchain for academic document verification
+              </h2>
+              <p
+                class="font-sans text-xs text-muted dark:text-muted-dark uppercase tracking-wider mb-3"
+              >
+                KUET undergraduate project · Dr. Kazi Md. Rokibul Alam ·
+                published ICCIT 2023
+              </p>
+              <p class="font-serif text-[1.0625rem] leading-relaxed">
+                An Ethereum based framework for tamper evident academic
+                credentials, motivated by widespread credential fraud in
+                Bangladesh. Smart contracts hold document hashes; verification
+                is a single chain read.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-line dark:border-line-dark">
+      <div
+        class="container-page py-8 text-xs font-sans text-muted dark:text-muted-dark flex flex-col sm:flex-row justify-between gap-2"
+      >
+        <div>© 2026 Sourav Majumder</div>
+        <div class="flex gap-4">
+          <a
+            href="/blog/rss.xml"
+            class="hover:text-accent dark:hover:text-accent-dark transition-colors"
+            >RSS</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/theme.js"></script>
+    <script src="/js/citations.js"></script>
+  </body>
+</html>

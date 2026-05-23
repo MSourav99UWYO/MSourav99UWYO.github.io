@@ -1,0 +1,17 @@
+{
+  "name": "sourav-majumder-website",
+  "version": "1.0.0",
+  "description": "Personal website of Sourav Majumder",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/output.css --minify",
+    "watch:css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "build:blog": "node scripts/build-blog.js",
+    "build": "npm run build:css && npm run build:blog",
+    "dev": "npm run build && npx http-server -p 8080 -c-1"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.4",
+    "tailwindcss": "^3.4.17"
+  }
+}
